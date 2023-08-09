@@ -15,4 +15,5 @@
        WHERE t1.Freight > ALL 
        (SELECT UnitPrice FROM Products);
 
+Рефлексия по предыдущему заданию:
 
