@@ -11,5 +11,8 @@
 
   
 9.4.3. Немного условный, но показательный пример. Найдите все заказы (таблица Orders), цена за доставку товара которых (Freight) превышает цену любого товара (поле UnitPrice, таблица Products).
+       SELECT *  FROM Orders t1
+       WHERE t1.Freight > ALL 
+       (SELECT UnitPrice FROM Products);
 
 
