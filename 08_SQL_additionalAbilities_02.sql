@@ -5,7 +5,9 @@
   
 
 9.4.2. Найдите вложенным запросом список заказов (Orders), в котором у заказчиков (Customers) регион не пуст (поле Region).
-
+       SELECT *  FROM Orders
+       WHERE CustomerID = ANY
+       (SELECT CustomerID FROM Customers WHERE Region IS NOT NULL);
 
   
 9.4.3. Немного условный, но показательный пример. Найдите все заказы (таблица Orders), цена за доставку товара которых (Freight) превышает цену любого товара (поле UnitPrice, таблица Products).
