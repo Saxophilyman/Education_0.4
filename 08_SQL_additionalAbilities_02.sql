@@ -16,4 +16,4 @@
        (SELECT UnitPrice FROM Products);
 
 Рефлексия по предыдущему заданию:
-
+Всё совпадает
