@@ -37,4 +37,9 @@ WHERE Products.ProductID = [Order Details].ProductID
         SELECT Products.ProductName, [Order Details].UnitPrice
         FROM Products INNER JOIN [Order Details]
         ON Products.ProductID = [Order Details].ProductID
-          
+
+
+Рефлексия по предыдущему заданию:
+По пункту 9.4.1.  не задал проверку на нулевые значения у (t2.Region IS NULL)
+В задании 9.4.2. выбор делал из всех столбцов, а не конкретно из OrderID, использовал ANY
+В задании 9.4.3. выбор делал также из всех столбцов и с обозначением t1
