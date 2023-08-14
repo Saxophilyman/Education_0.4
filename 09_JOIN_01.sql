@@ -20,7 +20,13 @@ ORDER BY Freight;
   
   
 10.4.3. Подумайте, как с помощью предложения WHERE превратить запрос CROSS JOIN в INNER JOIN.
-
+        
+        Предполагаю, что нужно задать с помощью команды  WHERE уточнения в виде соответствия по FK ключам, тогда вместо декартового произведения, например
+        10*10=100 строк, получится те же 10*10=10 строк в соответствии по FK ключам..
+        Пример:
+        SELECT Employees.FirstName, Employees.LastName, Orders.Freight
+        FROM Employees CROSS JOIN Orders;
+        WHERE Orders.EmployeeID = Employees.EmployeeID
 
   
 10.4.4. Перепишите данный запрос в INNER JOIN:
