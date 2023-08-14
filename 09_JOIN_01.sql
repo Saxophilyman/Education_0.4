@@ -33,3 +33,8 @@ ORDER BY Freight;
 SELECT Products.ProductName, [Order Details].UnitPrice
 FROM Products CROSS JOIN [Order Details]
 WHERE Products.ProductID = [Order Details].ProductID
+
+        SELECT Products.ProductName, [Order Details].UnitPrice
+        FROM Products INNER JOIN [Order Details]
+        ON Products.ProductID = [Order Details].ProductID
+          
