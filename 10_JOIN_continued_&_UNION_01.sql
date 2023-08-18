@@ -8,3 +8,6 @@
         SELECT 'Customer' As Type, ContactName, City, Country FROM Customers
         UNION
         SELECT 'Supplier' As Type, ContactName, City, Country FROM Suppliers;
+
+Рефлексия по предыдущему заданию:
+10.4.1. Выбирал из Products, а не [Order Details]. По результатам совпадает.
