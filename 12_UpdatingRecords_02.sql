@@ -11,4 +11,22 @@
         WHERE City = 'Berlin' and Country = 'Germany'
 
 13.3.3. Добавьте и затем удалите несколько записей в таблице Shippers. По какому критерию вы удаляли свежие записи?
+        Добавление:
+        1) INSERT INTO Shippers (CompanyName, Phone)
+           VALUES ('Fast Trails', '(503) 555-5555');
         
+        2) INSERT INTO Shippers (CompanyName, Phone)
+           VALUES ('Pony Express', '(503) 555-5556');
+
+        Удаление:
+        1) DELETE FROM Shippers
+           WHERE ShipperID = 5;
+
+        2) DELETE FROM Shippers
+           WHERE CompanyName = 'Fast Trails';
+
+        Удалял по ShipperID и по CompanyName, оба варианта работают.
+
+
+Рефлексия по предыдущему заданию:
+
